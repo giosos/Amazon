@@ -1,0 +1,15 @@
+@@ table languages
+        | locale |
+        | en     |
+       # | de     |
+       # | fi     |
+        #| fr     |
+       # | hk     |
+       # | it     |
+        #| nl     |
+        #| tr     |
+
+@@ parameterized using languages
+Homepage test for ${locale} language
+        selenium chrome https://www.amazon.de/ 1366x768
+            check specs/homepage.gspec
